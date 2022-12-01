@@ -5,44 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>StoreFront</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  </head>
+    <script src="https://kit.fontawesome.com/b03388ca7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Storefront</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Sign In</a></li>
-                  <li><a class="dropdown-item" href="#">Log In</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+      <nav class="'navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="nav_top">
+        <div class="w-100 d-flex justify-content-between">
+          <div>
+            <a class="text-light"><i class="fa-solid fa-envelope"></i></a>
+            <a class="navbar-sm-brand text-light text-decoration-none" href="">under@armour.com</a> 
+            <a class="text-light"><i class="fa-solid fa-phone"></i></a>
+            <a class="navbar-sm-brand text-light text-decoration-none" href="">123-867-5309</a>
+          </div>
+          <div>
+            <a class="text-light"><i class="fa-brands fa-instagram"></i></a>
+            <a class="text-light"><i class="fa-brands fa-twitter"></i></a>
+            <a class="text-light"><i class="fa-brands fa-facebook"></i></a>
           </div>
         </div>
       </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="">Under Armour</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search"><i class="fa fa-fw fa-search text-dark mr-2"></i></a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#"><i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i></a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#"><i class="fa fa-fw fa-user text-dark mr-3"></i>  </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="container">
+                  <div class="row p-5">
+                      <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                          <img class="img-fluid" src="img/sneaker.webp" alt="">
+                      </div>
+                      <div class="col-lg-6 mb-0 d-flex align-items-center">
+                          <div class="text-align-left align-self-center">
+                              <h1 class="h1 text-success"><b>Under</b> Armour</h1>
+                              <h3 class="h2">Protect This House</h3>
+                              <p>
+                                  Under Armour is the leader in athletic and casual clothing and footwear. From the casual runner to profesional
+                                  athletes, everyone can enjoy the comfort of Under Armour. Using state of the art technology to keep athletes 
+                                  comfortable and ready to perform no matter the conditions. 
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="container">
+                  <div class="row p-5">
+                      <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                          <img class="img-fluid" src="img/sweatshirt.webp" alt="">
+                      </div>
+                      <div class="col-lg-6 mb-0 d-flex align-items-center">
+                          <div class="text-align-left">
+                              <h1 class="h1">Wear Anywear</h1>
+                              <h3 class="h2">Comfort Can Still Look Good</h3>
+                              <p>
+                                  Under Amour hoodies like this keep you worn and can be worn in any situation. Working out, running, or just
+                                  walking around town, Under Armour has the gear for you.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="container">
+                  <div class="row p-5">
+                      <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                          <img class="img-fluid" src="img/coldgear.jpg" alt="">
+                      </div>
+                      <div class="col-lg-6 mb-0 d-flex align-items-center">
+                          <div class="text-align-left">
+                              <h1 class="h1">Gear For the Cold</h1>
+                              <h3 class="h2">WIth Winter Coming it's Important to Stay Warm</h3>
+                              <p>
+                                  Coldgear is designed to keep you warm in the coldest of temperatures. Our Coldgear technology keeps your body warm
+                                  so you can still perform on the coldest of days. Don't let the weather stop you from doing your best.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+          <i class="fas fa-chevron-left"></i>
+      </a>
+      <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+          <i class="fas fa-chevron-right"></i>
+      </a>
+  </div>
   </body>
 </html>
