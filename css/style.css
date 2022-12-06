@@ -1,4 +1,11 @@
 
+:root {/*-- sets color variables --*/
+  --dark: #020820;
+  --ltmid: #2c6890 ;
+  --dkmid: #ff0015;
+  --light: #e9eef5;
+  --accent: #686868;
+}
 body, ul, li, p, a, label, input, div {
     font-family: 'Roboto', sans-serif;
     font-size: 18px !important;
@@ -20,35 +27,35 @@ body, ul, li, p, a, label, input, div {
   }
   /* General */
   .logo { font-weight: 500 !important;}
-  .text-warning {  color: red !important;}
-  .text-muted { color: #bcbcbc !important;}
-  .text-success { color: darkblue !important;}
-  .text-light { color: white !important;}
-  .bg-dark { background-color: #212934 !important;}
-  .bg-light { background-color: #e9eef5 !important;}
-  .bg-black { background-color: #1d242d !important;}
-  .bg-success { background-color: darkblue !important;}
+  .text-warning {  color: var(--dkmid) !important;}
+  .text-muted { color: var(--accent) !important;}
+  .text-success { color: var(--dark) !important;}
+  .text-light { color: var(--light) !important;}
+  .bg-dark { background-color: var(--dark) !important;}
+  .bg-light { background-color: var(--light) !important;}
+  .bg-black { background-color: var(--dark) !important;}
+  .bg-success { background-color: var(--ltmid) !important;}
   .btn-success {
-    background-color: lightblue !important;
-    border-color: red !important;
+    background-color: var(--ltmid) !important;
+    border-color: var(--dkmid) !important;
   }
-  .pagination .page-link:hover {color: #000;}
+  .pagination .page-link:hover {color: var(--dark);}
   .pagination .page-link:hover, .pagination .page-link.active {
-    background-color: darkblue;
-    color: #fff;
+    background-color: var(--ltmid);
+    color: var(--light);
   }
   /* Nav */
   #templatemo_nav_top { min-height: 40px;}
   #templatemo_nav_top * { font-size: .9em !important;}
-  #templatemo_main_nav a { color: #212934;}
-  #templatemo_main_nav a:hover { color: lightslategray;}
+  #templatemo_main_nav a { color: var(--dark);}
+  #templatemo_main_nav a:hover { color: var(--accent);}
   #templatemo_main_nav .navbar .nav-icon { margin-right: 20px;}
   
   /* Hero Carousel */
   #template-mo-zay-hero-carousel { background: #efefef !important;}
   /* Accordion */
-  .templatemo-accordion a { color: #000;}
-  .templatemo-accordion a:hover { color: #333d4a;}
+  .templatemo-accordion a { color: var(--dkmid);}
+  .templatemo-accordion a:hover { color: var(--ltmid);}
   /* Shop */
   .shop-top-menu a:hover { color: red !important;}
   /* Product */
