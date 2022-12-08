@@ -32,6 +32,7 @@ body, ul, li, p, a, label, input, div {
   .text-muted { color: var(--accent) !important;}
   .text-success { color: var(--light) !important;}
   .text-light { color: var(--light) !important;}
+  .text-light:hover { color: var(--dkmid) !important;}
   .text-dark { color: var(--dkblue) !important;}
   .text-ltblue { color: var(--ltmid) !important;}
   .text-red { color: var(--dkmid) !important;}
@@ -39,7 +40,24 @@ body, ul, li, p, a, label, input, div {
   .bg-light { background-color: var(--light) !important;}
   .bg-black { background-color: var(--dark) !important;}
   .bg-success { background-color: var(--ltmid) !important;}
-  .bg-image { background-image: url("../img/light_brick.jpg");}
+  .bg-image { 
+    background-image: url("../img/light_brick.jpg");
+    max-width:1600px;
+  }
+  .border-top-bottom-blue {
+    border-top: 2px solid var(--ltmid);
+    border-bottom: 2px solid var(--ltmid);
+  }
+  .border-bottom-blue {
+    border-bottom: 2px solid var(--ltmid);
+  }
+  .border-top-bottom-red {
+    border-top: 2px solid var(--dkmid);
+    border-bottom: 2px solid var(--dkmid);
+  }
+  .border-blue {
+    border: 1px solid var(--ltmid)
+  }
   .btn-success {
     background-color: white !important;
     border-color: var(--dkmid) !important;
@@ -158,7 +176,7 @@ body, ul, li, p, a, label, input, div {
   }
   .form-control {
     border: 1px solid var(--light);
-    color: var(--accent);
+    color: var(--light);
     background-color: var(--dark);
   }
   #tempaltemo_footer a { 
